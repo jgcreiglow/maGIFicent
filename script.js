@@ -1,4 +1,4 @@
-var gifs = ["happy", "sad", "angry"]
+var gifs = ["happy", "sad", "angry", "jealous", "bored", "confused", "hungry", "proud", "git master"];
 
 function displaygif() {
 
