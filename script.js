@@ -37,7 +37,7 @@ function displaygif() {
 
     };
 
-    $(".gif").on("click", function() {
+    $(".flip").on("click", function() {
 
       var state = $(this).attr("data-state");
 
