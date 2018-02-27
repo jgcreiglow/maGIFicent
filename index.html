@@ -27,26 +27,32 @@
     <h1 align="center"> Find a ma<i>GIF</i>icent Gif for any emotion! </h1>
   </div>
 
+  <div class="row">
+      <div align="center">
+        <div id="buttons-view"></div>
+      </div>
+    </div>
+  
   <!-- form to add buttons -->
 
   <div class="row">
-    <div class="col-md-offset-2">
+    <div align="center" class="box col-md-4">
       <form id="gif-form">
-        <label class="col-md-2 col-md" for="gif-input">How do you feel?</label>
-        <input type="text" id="gif-input">
-        <br>
+        <div class="row">
+          <label for="gif-input">How do you feel?</label>
+        </div>
+        <div class="row">
+          <input  class="text" align="center" type="text" id="gif-input">
+        </div>
+        <div class="row">
         <!-- Button triggers new gif -->
-        <input id="add-gif" type="submit" class="btn btn-lg btn-success col-md-4" value="Add some maGIFicence to your day">
+         <input  align="center" id="add-gif" type="submit" class="btn btn-lg btn-success" value="Add some maGIFicence to your day">
+      </div>
       </form>
     </div>
   </div>
 
   <!-- Buttons -->
-  <div class="row">
-    <div class="col-md-offset-2">
-      <div id="buttons-view"></div>
-    </div>
-  </div>
 
   <!-- gifs go here -->
   <div class="row">

@@ -10,3 +10,25 @@
 body{
   background: lavender;
 }
+
+.text{
+  color:steelblue;
+  text-align: center;
+}
+.box{
+  color: white;
+  background-image: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
+  margin-left:35%;
+  margin-bottom: 20px;
+}
+
+#gifs-view{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flip{
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  flex-grow: 1;
+}
