@@ -19,10 +19,10 @@ function displaygif() {
       var pOne = $("<p>").text("Rating: " + rating);
 
 
-var image = $("<img>")
+      var image = $("<img>")
 
-      image.attr("src",results[i].images.fixed_height_still.url);
-    //Attributes to flip from still to animated
+      image.attr("src", results[i].images.fixed_height_still.url);
+      //Attributes to flip from still to animated
       image.addClass("flip");
       image.attr("data-still", results[i].images.fixed_height_still.url);
       image.attr("data-animate", results[i].images.fixed_height.url);
