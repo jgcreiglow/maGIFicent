@@ -85,14 +85,3 @@ $(document).on("click", ".gif-btn", displaygif);
 
 
 renderButtons();
-
-
-// (gif image).on(click. function(){
-//if (image state = still){
-//set image state = animate
-//};
-
-//else{
-//set image state to still
-//};
-//});
