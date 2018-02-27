@@ -29,23 +29,8 @@ function displaygif() {
 
 //new gif to top of list
     $("#gifs-view").prepend(gifDiv);
-        gifDiv.append(image);
+        gifDiv.append(anImage);
         gifDiv.append(pOne);
-
-        $(".gif").on("click", function() {
-          var state = $(this).attr("data-state");
-
-          if (state === "still") {
-            console.log("animate");
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-state", "animate");
-          }
-          else {
-            console.log("still");
-            $(this).attr("src", $(this).attr("data-still"));
-            $(this).attr("data-state", "still");
-          }
-        });
 };
   });
 
@@ -79,3 +64,16 @@ function renderButtons() {
       $(document).on("click", ".gif-btn", displaygif);
 
       renderButtons();
+
+      $(".gif").on("click", function() {
+        var state = $(this).attr("data-state");
+
+        if (state === "still") {
+          var imgURL = results[i].images.fixed_height.url;
+          var image = $("<img data-state='animate'>").attr("src", imgURL);
+        }
+        else {
+          $(this).attr("src", $(this).attr("data-still"));
+          $(this).attr("data-state", "still");
+        }
+      });
