@@ -1,5 +1,5 @@
 # maGIFicent
-##A magnificent Gif seacher!
+## A magnificent Gif seacher!
 
 Uses the Giphy API to pull 10 still gifs based on the button clicked. 
 
